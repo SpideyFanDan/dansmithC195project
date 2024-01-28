@@ -24,7 +24,7 @@ public class Appointment {
     private int userId;
     private int contactId;
 
-    /**This is the appointment constructor
+    /**This is the constructor for the appointments table including getters and setters for variables above
      * @param appointmentId appointment ID
      * @param title appointment title
      * @param description appointment description
@@ -64,7 +64,7 @@ public class Appointment {
         return appointmentId;
     }
 
-    /**@param appointmentId the appointment ID to set*/
+    /**@param appointmentId the appointment ID setter*/
     public void setAppointmentId(int appointmentId) {
         this.appointmentId = appointmentId;
     }
@@ -74,7 +74,7 @@ public class Appointment {
         return title;
     }
 
-    /**@param title the appointment title to set*/
+    /**@param title the appointment title setter*/
     public void setTitle(String title) {
         this.title = title;
     }
@@ -84,7 +84,7 @@ public class Appointment {
         return description;
     }
 
-    /**@param description the appointment description to set*/
+    /**@param description the appointment description setter*/
     public void setDescription(String description) {
         this.description = description;
     }
@@ -94,7 +94,7 @@ public class Appointment {
         return location;
     }
 
-    /**@param location the appointment location to set*/
+    /**@param location the appointment location setter*/
     public void setLocation(String location) {
         this.location = location;
     }
@@ -104,8 +104,7 @@ public class Appointment {
         return type;
     }
 
-    /**@param type the appointment type to set
-     */
+    /**@param type the appointment type setter*/
     public void setType(String type) {
         this.type = type;
     }
@@ -115,7 +114,7 @@ public class Appointment {
         return startDateTime;
     }
 
-    /**@param startDateTime the appointment start date and time to set*/
+    /**@param startDateTime the appointment start date and time setter*/
     public void setStartDateTime(LocalDateTime startDateTime) {
         this.startDateTime = startDateTime;
     }
@@ -125,7 +124,7 @@ public class Appointment {
         return endDateTime;
     }
 
-    /**@param endDateTime the appointment end date and time to set*/
+    /**@param endDateTime the appointment end date and time setter*/
     public void setEndDateTime(LocalDateTime endDateTime) {
         this.endDateTime = endDateTime;
     }
@@ -135,7 +134,7 @@ public class Appointment {
         return startDate;
     }
 
-    /**@param startDate the appointment start date to set*/
+    /**@param startDate the appointment start date setter*/
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
@@ -145,7 +144,7 @@ public class Appointment {
         return endDate;
     }
 
-    /**@param endDate the appointment end date to set*/
+    /**@param endDate the appointment end date setter*/
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
@@ -155,7 +154,7 @@ public class Appointment {
         return startTime;
     }
 
-    /**@param startTime the appointment (local) start time to set*/
+    /**@param startTime the appointment (local) start time setter*/
     public void setStartTime(LocalTime startTime) {
         this.startTime = startTime;
     }
@@ -165,7 +164,7 @@ public class Appointment {
         return endTime;
     }
 
-    /**@param endTime the appointment (local) end time to set*/
+    /**@param endTime the appointment (local) end time setter*/
     public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
@@ -175,7 +174,7 @@ public class Appointment {
         return customerId;
     }
 
-    /**@param customerId the customer ID to set*/
+    /**@param customerId the customer ID setter*/
     public void setCustomerId(int customerId) {
         this.customerId = customerId;
     }
@@ -185,7 +184,7 @@ public class Appointment {
         return userId;
     }
 
-    /**@param userId the database user ID to set*/
+    /**@param userId the database user ID setter*/
     public void setUserId(int userId) {
         this.userId = userId;
     }
@@ -195,7 +194,7 @@ public class Appointment {
         return contactId;
     }
 
-    /**@param contactId the customer contact ID to set*/
+    /**@param contactId the customer contact ID setter*/
     public void setContactId(int contactId) {
         this.contactId = contactId;
     }

@@ -1,14 +1,13 @@
 package wgu.dansmithc195project.models;
 
-/**This class is for Contacts taken from the ERD. There is no email required anywhere in the requirements,
+/**This class is for Contacts built from the ERD. There is no email required anywhere in the requirements,
  * so I left it out of the constructor*/
 public class Contact {
-    /**customer contact ID*/
+    /**These variables and data types come directly from the Contacts table in the ERD*/
     private int contactId;
-    /**customer contact name*/
     private String contactName;
 
-    /**This is the Contacts constructor.
+    /**This is the Contacts constructor with getters and setters for each variable above.
      * @param contactId customer contact ID
      * @param contactName customer contact name
      */
@@ -22,7 +21,7 @@ public class Contact {
         return contactId;
     }
 
-    /**@param contactId the customer contact ID to set*/
+    /**@param contactId the customer contact ID setter*/
     public void setContactId(int contactId) {
         this.contactId = contactId;
     }
@@ -32,7 +31,7 @@ public class Contact {
         return contactName;
     }
 
-    /**@param contactName the customer contact name to set*/
+    /**@param contactName the customer contact name setter*/
     public void setContactName(String contactName) {
         this.contactName = contactName;
     }

@@ -1,39 +1,37 @@
 package wgu.dansmithc195project.models;
 
-/**This class is for Countries taken from the ERD. I left out create and update attributes because they are not
+/**This class is for Countries built from the ERD. I left out create and update attributes because they are not
  * part of the requirements for this project*/
 
 public class Country {
-    /**Country ID*/
+    /**These variables and data types come directly from the Countries tables in the ERD*/
     private int countryId;
-    /**Country name*/
-    private String countryName;
-    /**This is the Country constructor.
+    private String country;
+
+    /**This is the Country constructor with setters and getters for the variables above.
      * @param countryId country ID
-     * @param countryName country name
+     * @param country country
      */
-    public Country(int countryId, String countryName) {
+    public Country(int countryId, String country) {
         this.countryId = countryId;
-        this.countryName = countryName;
+        this.country = country;
     }
 
     /**@return the countryId*/
-    public int getCountryId() {
-        return countryId;
-    }
+    public int getCountryId() { return countryId; }
 
-    /**@param countryId the country ID to set*/
+    /**@param countryId the country ID setter*/
     public void setCountryId(int countryId) {
         this.countryId = countryId;
     }
 
-    /**@return the country name*/
-    public String getCountryName() {
-        return countryName;
+    /**@return the name of the country*/
+    public String getCountry() {
+        return country;
     }
 
-    /**@param countryName the country name to set*/
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
+    /**@param country the country name setter*/
+    public void setCountryName(String country) {
+        this.country = country;
     }
 }
