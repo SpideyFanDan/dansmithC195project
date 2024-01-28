@@ -5,8 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import wgu.dansmithc195project.utils.JDBC;
+
 
 import java.io.*;
+
 /**Main class that launches the application's main screen*/
 public class Main extends Application {
     @Override
@@ -17,16 +20,9 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
     }
+
 /**@param args arguments for the command line*/
-    /*public static void main(String[] args) {
-        *//**this try...catch function handles launching the dd and creating the connection*//*
-        try {
-            DBConnection.startConnection();
-            launch(args);
-            *//*this closes the database connection when the user exits the application *//*
-            DBConnection.closeConnection();
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }*/
+    public static void main(String[] args) {
+        JDBC.startConnection();
+    }
 }
