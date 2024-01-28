@@ -11,51 +11,34 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
-/** This is the controller for the opening screen. I initially pulled everything from SceneBuilder
- * and then coded from there */
+/** This is the controller for the opening screen. */
 public class MainController implements Initializable {
-    @FXML
-    private Button apptsButton;
-    @FXML
-    private Button contactButton;
-    @FXML
-    private Button exitButton;
-    @FXML
-    private HBox locationLabel;
-    @FXML
-    private Label locationLoginLabel;
-    @FXML
-    private Button loginButton;
-    @FXML
-    private Button reportsButton;
-    @FXML
-    private Label titleLabel;
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    @FXML private Button apptsButton;
+    @FXML private Button contactButton;
+    @FXML private Button exitButton;
+    @FXML private Label locationLoginLabel;
+    @FXML private Button loginButton;
+    @FXML private Button reportsButton;
+    @Override public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
-    @FXML
-    void exitProgram(ActionEvent event) {
+    @FXML void exitProgram(ActionEvent event) {
 
     }
 
-    @FXML
-    void openApptsScreen(ActionEvent event) {
+    @FXML void openApptsScreen(ActionEvent event) {
 
     }
 
-    @FXML
-    void openContactsScreen(ActionEvent event) {
+    @FXML void openContactsScreen(ActionEvent event) {
 
     }
 
-    @FXML
-    void openLoginScreen(ActionEvent event) {
+    @FXML void openLoginScreen(ActionEvent event) {
 
     }
 
-    @FXML
-    void openReportsScreen(ActionEvent event) {
+    @FXML void openReportsScreen(ActionEvent event) {
 
     }
 }

@@ -8,50 +8,49 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="wgu.project.controllers.CustomerFormController">
+<AnchorPane prefHeight="400.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.project.controllers.CustomerFormController">
    <children>
       <VBox layoutX="32.0" layoutY="14.0" prefHeight="274.0" prefWidth="284.0">
          <children>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerIDLabel" prefHeight="18.0" prefWidth="71.0" text="Customer ID:" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Customer ID:" />
                   <TextField fx:id="customerID" disable="true" editable="false" prefHeight="25.0" prefWidth="197.0" />
                </children>
             </HBox>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerNameLabel" prefHeight="18.0" prefWidth="71.0" text="Name:" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Name:" />
                   <TextField fx:id="customerNameField" prefHeight="25.0" prefWidth="197.0" />
                </children>
             </HBox>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerAddressLabel" prefHeight="18.0" prefWidth="71.0" text="Address:" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Address:" />
                   <TextField fx:id="customerAddressField" prefHeight="25.0" prefWidth="197.0" />
                </children>
             </HBox>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerDivisionLabel" prefHeight="18.0" prefWidth="71.0" text="Division" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Division" />
                   <ComboBox fx:id="customerDivisionDropdown" prefHeight="25.0" prefWidth="196.0" />
                </children>
             </HBox>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerCountryLabel" prefHeight="18.0" prefWidth="71.0" text="Country:" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Country:" />
                   <ComboBox fx:id="customerCountryDropdown" prefHeight="25.0" prefWidth="196.0" />
                </children>
             </HBox>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerPostalCodeLabel" prefHeight="18.0" prefWidth="71.0" text="Postal Code:" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Postal Code:" />
                   <TextField fx:id="customerPostalCodeField" prefHeight="25.0" prefWidth="197.0" />
                </children>
             </HBox>
             <HBox prefHeight="38.0" prefWidth="284.0">
                <children>
-                  <Label fx:id="customerPhoneLabel" prefHeight="18.0" prefWidth="71.0" text="Phone:" />
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Phone:" />
                   <TextField fx:id="customerPhoneField" prefHeight="25.0" prefWidth="197.0" />
                </children>
             </HBox>

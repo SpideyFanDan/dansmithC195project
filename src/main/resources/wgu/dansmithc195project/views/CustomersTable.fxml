@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="wgu.project.controllers.CustomersTableController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.project.controllers.CustomersTableController">
    <children>
       <TableView fx:id="customerTable" layoutX="24.0" layoutY="14.0" prefHeight="400.0" prefWidth="800.0">
         <columns>
@@ -23,14 +22,14 @@
       </TableView>
       <HBox alignment="CENTER" layoutX="358.0" layoutY="434.0" prefHeight="45.0" prefWidth="461.0" spacing="15.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="434.0">
          <children>
-            <Button fx:id="addButton" alignment="CENTER" mnemonicParsing="false" onAction="#pressAddButton" prefHeight="25.0" prefWidth="80.0" text="Add" textAlignment="CENTER">
+            <Button fx:id="addCustomerButton" alignment="CENTER" mnemonicParsing="false" onAction="#clickAddButton" prefHeight="25.0" prefWidth="80.0" text="Add" textAlignment="CENTER">
                <padding>
                   <Insets right="10.0" />
                </padding>
             </Button>
-            <Button fx:id="editButton" alignment="CENTER" mnemonicParsing="false" onAction="#pressEditButton" prefHeight="25.0" prefWidth="80.0" text="Edit" textAlignment="CENTER" />
-            <Button fx:id="deleteButton" alignment="CENTER" mnemonicParsing="false" onAction="#pressDeleteButton" prefHeight="25.0" prefWidth="80.0" text="Delete" textAlignment="CENTER" />
-            <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#pressBackButton" prefHeight="25.0" prefWidth="80.0" text="Back" textAlignment="CENTER">
+            <Button fx:id="editCustomerButton" alignment="CENTER" mnemonicParsing="false" onAction="#clickEditButton" prefHeight="25.0" prefWidth="80.0" text="Edit" textAlignment="CENTER" />
+            <Button fx:id="deleteCustomerButton" alignment="CENTER" mnemonicParsing="false" onAction="#clickDeleteButton" prefHeight="25.0" prefWidth="80.0" text="Delete" textAlignment="CENTER" />
+            <Button fx:id="backButton" alignment="CENTER" mnemonicParsing="false" onAction="#clickBackButton" prefHeight="25.0" prefWidth="80.0" text="Back" textAlignment="CENTER">
                <HBox.margin>
                   <Insets left="50.0" />
                </HBox.margin></Button>
