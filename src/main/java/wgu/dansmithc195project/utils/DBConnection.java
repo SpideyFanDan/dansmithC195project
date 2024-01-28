@@ -15,7 +15,7 @@ public class DBConnection {
     /**reference to JDBC driver interface that was imported*/
     private static final String MYSQLJDBCDriver = "com.mysql.jdbc.Driver";
     /**reference to connection interface*/
-    private static Connection conn = null;
+    //private static Connection conn = null;
     /**database username & password*/
     private static final String username = "unknown";
     private static final String password = "unknown";
