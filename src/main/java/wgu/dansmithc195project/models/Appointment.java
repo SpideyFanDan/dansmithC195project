@@ -5,7 +5,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZonedDateTime;
-/**This class handles customer appointments*/
+/**This class handles customer appointments, I left out the create and update attributes because they are not
+ * part of the requirements*/
 public class Appointment {
     /**The following variables and data types come from the Appointments Table in the ERD*/
     private int appointmentId;
