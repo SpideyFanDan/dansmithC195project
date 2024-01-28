@@ -1,162 +1,201 @@
 package wgu.dansmithc195project.models;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.ZonedDateTime;
-/**This model handles appointment getters*/
+/**This class handles customer appointments*/
 public class Appointment {
-    private Integer appointmentID;
+    /**The following variables and data types come from the Appointments Table in the ERD*/
+    private int appointmentId;
     private String title;
     private String description;
     private String location;
     private String type;
-    private Timestamp startDateTime;
-    private Timestamp endDateTime;
-    private Timestamp createDate;
-    private String createdBy;
-    private Timestamp lastUpdate;
-    private String lastUpdatedBy;
-    private Integer customerID;
-    private Integer userID;
-    private Integer contactID;
-    private String contactName;
+    private LocalDateTime startDateTime;
+    private LocalDateTime endDateTime;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private LocalTime startTime;
+    private LocalTime endTime;
+    private int customerId;
+    private int userId;
+    private int contactId;
 
-    /**
-     * Appointment constructor
-     * @param inputAppointmentID appointment ID (PK)
-     * @param inputContactID  contact ID (FK)
-     * @param inputContactName name of contact
-     * @param inputCreatedBy name of user who created the appointment
-     * @param inputCreateDate appointment creation date
-     * @param inputCustomerID customer ID (FK)
-     * @param inputDescription appointment description
-     * @param inputEndDateTime appointment end date and time
-     * @param inputLastUpdatedBy last person to update the appointment
-     * @param inputLastUpdate time and date of last update
-     * @param inputLocation appointment location
-     * @param inputStartDateTime Start date and time of appointment
-     * @param inputTitle appointment title
-     * @param inputType appointment Type
-     * @param inputUserID user ID(FK)
+    /**This is the appointment constructor
+     * @param appointmentId appointment ID
+     * @param title appointment title
+     * @param description appointment description
+     * @param location appointment location
+     * @param type appointment type
+     * @param startDateTime appointment start date & time
+     * @param endDateTime appointment end date & time
+     * @param startDate appointment start date
+     * @param endDate appointment end date
+     * @param startTime appointment start time
+     * @param endTime appointment end time
+     * @param customerId customer ID
+     * @param userId database user ID
+     * @param contactId customer contact ID
      */
-    public Appointment(Integer inputAppointmentID, String inputTitle, String inputDescription, String inputLocation,
-                       String inputType, Timestamp inputStartDateTime, Timestamp inputEndDateTime,
-                       Timestamp inputCreateDate, String inputCreatedBy, Timestamp inputLastUpdate,
-                       String inputLastUpdatedBy, Integer inputCustomerID, Integer inputUserID, Integer inputContactID,
-                       String inputContactName) {
-
-        appointmentID = inputAppointmentID;
-        title = inputTitle;
-        description = inputDescription;
-        location = inputLocation;
-        type = inputType;
-        startDateTime = inputStartDateTime;
-        endDateTime = inputEndDateTime;
-        createDate = inputCreateDate;
-        createdBy = inputCreatedBy;
-        lastUpdate = inputLastUpdate;
-        lastUpdatedBy = inputLastUpdatedBy;
-        customerID = inputCustomerID;
-        userID = inputUserID;
-        contactID = inputContactID;
-        contactName = inputContactName;
-
+    public Appointment(int appointmentId, String title, String description, String location, String type,
+                       LocalDateTime startDateTime, LocalDateTime endDateTime, LocalDate startDate, LocalDate endDate,
+                       LocalTime startTime, LocalTime endTime, int customerId, int userId, int contactId){
+        this.appointmentId = appointmentId;
+        this.title = title;
+        this.description = description;
+        this.location = location;
+        this.type = type;
+        this.startDateTime = startDateTime;
+        this.endDateTime = endDateTime;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.customerId = customerId;
+        this.userId = userId;
+        this.contactId = contactId;
     }
-    /** Appointment ID getter
-     * @return ID of the appointment
-     */
-    public Integer getAppointmentID() {
-        return appointmentID;
+
+    /**@return the appointmentId*/
+    public int getAppointmentId() {
+        return appointmentId;
     }
-    /** title getter
-     * @return title of the appointment
-     */
+
+    /**@param appointmentId the appointment ID to set*/
+    public void setAppointmentId(int appointmentId) {
+        this.appointmentId = appointmentId;
+    }
+
+    /**@return the title*/
     public String getTitle() {
         return title;
     }
-    /** description getter
-     * @return description of appointment
-     */
+
+    /**@param title the appointment title to set*/
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    /**@return the description*/
     public String getDescription() {
         return description;
     }
 
-    /** location getter
-     * @return location of appointment
-     */
+    /**@param description the appointment description to set*/
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    /**@return the location*/
     public String getLocation() {
         return location;
     }
 
-    /** type getter
-     * @return type of the appointment
-     */
-    public String getType() {
-        return  type;
+    /**@param location the appointment location to set*/
+    public void setLocation(String location) {
+        this.location = location;
     }
-    /** start date & time getter
-     * @return start date & time of appointment
+
+    /**@return the type*/
+    public String getType() {
+        return type;
+    }
+
+    /**@param type the appointment type to set
      */
-    public Timestamp getStartDateTime() {
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    /**@return the startDateTime*/
+    public LocalDateTime getStartDateTime() {
         return startDateTime;
     }
-    /** end date & time getter
-     * @return end datetime of appointment
-     */
-    public Timestamp getEndDateTime() {
+
+    /**@param startDateTime the appointment start date and time to set*/
+    public void setStartDateTime(LocalDateTime startDateTime) {
+        this.startDateTime = startDateTime;
+    }
+
+    /**@return the endDateTime*/
+    public LocalDateTime getEndDateTime() {
         return endDateTime;
     }
-    /** create date & time getter
-     * @return create date of appointment
-     */
-    public Timestamp getCreateDate() {
-        return createDate;
+
+    /**@param endDateTime the appointment end date and time to set*/
+    public void setEndDateTime(LocalDateTime endDateTime) {
+        this.endDateTime = endDateTime;
     }
 
-    /** created by getter
-     * @return who created appointment
-     */
-    public String getCreatedBy() {
-        return createdBy;
-    }
-    /** last update getter
-     * @return last update date & time of appointment
-     */
-    public Timestamp getLastUpdate() {
-        return lastUpdate;
+    /**@return the startDate*/
+    public LocalDate getStartDate() {
+        return startDate;
     }
 
-    /** last updated by getter
-     * @return who last updated the appointment
-     */
-    public String getLastUpdateBy() {
-        return lastUpdatedBy;
+    /**@param startDate the appointment start date to set*/
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
     }
 
-    /** customer ID getter
-     * @return customer ID
-     */
-    public Integer getCustomerID() {
-        return customerID;
+    /**@return the endDate*/
+    public LocalDate getEndDate() {
+        return endDate;
     }
 
-    /** user ID getter
-     * @return user ID
-     */
-    public Integer getUserID() {
-        return userID;
+    /**@param endDate the appointment end date to set*/
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
     }
 
-    /** contact ID getter
-     * @return contact ID
-     */
-    public Integer getContactID() {
-        return contactID;
+    /**@return the startTime*/
+    public LocalTime getStartTime() {
+        return startTime;
     }
 
-    /** contact name getter
-     * @return name of contact
-     */
-    public String getContactName() {
-        return contactName;
+    /**@param startTime the appointment (local) start time to set*/
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    /**@return the endTime*/
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    /**@param endTime the appointment (local) end time to set*/
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
+
+    /**@return the customerId*/
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    /**@param customerId the customer ID to set*/
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    /**@return the userId*/
+    public int getUserId() {
+        return userId;
+    }
+
+    /**@param userId the database user ID to set*/
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    /**@return the contactId*/
+    public int getContactId() {
+        return contactId;
+    }
+
+    /**@param contactId the customer contact ID to set*/
+    public void setContactId(int contactId) {
+        this.contactId = contactId;
     }
 }

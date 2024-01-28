@@ -8,60 +8,44 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.project.controllers.CustomerFormController">
-   <children>
-      <VBox layoutX="32.0" layoutY="14.0" prefHeight="274.0" prefWidth="284.0">
-         <children>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Customer ID:" />
-                  <TextField fx:id="customerID" disable="true" editable="false" prefHeight="25.0" prefWidth="197.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Name:" />
-                  <TextField fx:id="customerNameField" prefHeight="25.0" prefWidth="197.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Address:" />
-                  <TextField fx:id="customerAddressField" prefHeight="25.0" prefWidth="197.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Division" />
-                  <ComboBox fx:id="customerDivisionDropdown" prefHeight="25.0" prefWidth="196.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Country:" />
-                  <ComboBox fx:id="customerCountryDropdown" prefHeight="25.0" prefWidth="196.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Postal Code:" />
-                  <TextField fx:id="customerPostalCodeField" prefHeight="25.0" prefWidth="197.0" />
-               </children>
-            </HBox>
-            <HBox prefHeight="38.0" prefWidth="284.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="71.0" text="Phone:" />
-                  <TextField fx:id="customerPhoneField" prefHeight="25.0" prefWidth="197.0" />
-               </children>
-            </HBox>
-         </children>
-      </VBox>
-      <HBox alignment="CENTER_RIGHT" layoutX="56.0" layoutY="296.0" prefHeight="46.0" prefWidth="245.0" spacing="20.0">
-         <children>
-            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#clickSaveButton" prefHeight="25.0" prefWidth="70.0" text="Save " />
-            <Button fx:id="backButton" mnemonicParsing="false" onAction="#clcikBackButton" prefHeight="25.0" prefWidth="70.0" text="Back" />
-         </children>
+<AnchorPane prefHeight="400.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="wgu.dansmithc195project.controllers.CustomerFormController">
+   <VBox layoutX="32.0" layoutY="14.0" prefHeight="274.0" prefWidth="284.0">
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Customer ID:"/>
+         <TextField fx:id="customerID" disable="true" editable="false" prefHeight="25.0" prefWidth="197.0"/>
       </HBox>
-      <Label fx:id="customerLabelError" alignment="CENTER" contentDisplay="TOP" focusTraversable="false" layoutX="135.0" layoutY="277.0" text="Please fill out all fields" textFill="RED" />
-   </children>
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Name:"/>
+         <TextField fx:id="customerNameField" prefHeight="25.0" prefWidth="197.0"/>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Address:"/>
+         <TextField fx:id="customerAddressField" prefHeight="25.0" prefWidth="197.0"/>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Division"/>
+         <ComboBox fx:id="customerDivisionDropdown" prefHeight="25.0" prefWidth="196.0"/>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Country:"/>
+         <ComboBox fx:id="customerCountryDropdown" prefHeight="25.0" prefWidth="196.0"/>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Postal Code:"/>
+         <TextField fx:id="customerPostalCodeField" prefHeight="25.0" prefWidth="197.0"/>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="284.0">
+         <Label prefHeight="18.0" prefWidth="71.0" text="Phone:"/>
+         <TextField fx:id="customerPhoneField" prefHeight="25.0" prefWidth="197.0"/>
+      </HBox>
+   </VBox>
+   <HBox alignment="CENTER_RIGHT" layoutX="56.0" layoutY="296.0" prefHeight="46.0" prefWidth="245.0" spacing="20.0">
+      <Button fx:id="saveButton" mnemonicParsing="false" onAction="#clickSaveButton" prefHeight="25.0"
+              prefWidth="70.0" text="Save "/>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#clcikBackButton" prefHeight="25.0"
+              prefWidth="70.0" text="Back"/>
+   </HBox>
+   <Label fx:id="customerLabelError" alignment="CENTER" contentDisplay="TOP" layoutX="135.0"
+          layoutY="277.0" text="Please fill out all fields" textFill="RED"/>
 </AnchorPane>
