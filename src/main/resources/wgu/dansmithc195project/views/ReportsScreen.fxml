@@ -85,10 +85,10 @@
                <columns>
                   <TableColumn fx:id="numLoginAttemptsCol" prefWidth="34.0" text="#" />
                   <TableColumn fx:id="numLoginAttemptsUserCol" minWidth="5.0" prefWidth="170.0" style="-fx-alignment: CENTER;" text="User" />
-                  <TableColumn fx:id="numLoginAttemptsMonthCol" minWidth="5.0" prefWidth="101.0" style="-fx-alignment: CENTER;" text="Month" />
+                  <TableColumn fx:id="numLoginAttemptsDateCol" minWidth="5.0" prefWidth="101.0" style="-fx-alignment: CENTER;" text="Date" />
                </columns>
             </TableView>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="232.0" style="-fx-font-weight: bold;" text="Total User Login Attempts by Month" textAlignment="CENTER" GridPane.columnIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="232.0" style="-fx-font-weight: bold;" text="Total User Login Attempts by Date" textAlignment="CENTER" GridPane.columnIndex="3" />
             <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Back" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets top="100.0" />
