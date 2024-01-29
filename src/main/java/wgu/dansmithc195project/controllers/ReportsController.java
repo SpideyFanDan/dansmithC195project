@@ -9,6 +9,7 @@ import javafx.scene.control.TableView;
 
 public class ReportsController {
 
+    public TableColumn numLoginAttemptsDateCol;
     @FXML private Button backButton;
     @FXML private ComboBox<?> contactDropdown;
     @FXML private TableColumn<?, ?> customerIdCol;
