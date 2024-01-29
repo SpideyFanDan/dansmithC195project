@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import static java.lang.Class.forName;
+
 /**This class handles the SQL database connection*/
 public abstract class JDBC {
     /**these variables build the full JDBC URL*/
@@ -17,7 +19,8 @@ public abstract class JDBC {
     private static String password = "Passw0rd!"; // Password
     public static Connection connection = null;  // Connection Interface
 
-    public static Connection startConnection() {
+    public static Connection openConnection()
+    {
         try {
             Class.forName(driver); // Locate Driver
             connection = DriverManager.getConnection(jdbcUrl, userName, password); // Reference Connection object
@@ -37,15 +40,47 @@ public abstract class JDBC {
     public static Connection getConnection(){
         return connection;
     }
+
     public static Connection closeConnection() {
         try {
             connection.close();
-        }
+            }
         catch(Exception e)
         {
             //do nothing
         }
         return connection;
     }
+
+//    public static Connection openConnection() {
+//        try {
+//            Class.forName(driver); // Locate Driver
+//            connection = DriverManager.getConnection(jdbcUrl, userName, password); // Reference Connection object
+//            System.out.println("Connection successful!");
+//        }
+//        catch(SQLException e) {
+//            //System.out.println("Error:" + e.getMessage());
+//            e.printStackTrace();
+//        }
+//        catch (ClassNotFoundException e){
+//            //System.out.println(e.getMessage());
+//            e.printStackTrace();
+//        }
+//        return connection;
+//    }
+//
+//    public static Connection getConnection(){
+//        return connection;
+//    }
+//    public static Connection closeConnection() {
+//        try {
+//            connection.close();
+//        }
+//        catch(Exception e)
+//        {
+//            //do nothing
+//        }
+//        return connection;
+//    }
 
 }

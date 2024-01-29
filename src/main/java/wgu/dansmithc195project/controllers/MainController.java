@@ -1,10 +1,9 @@
-package wgu.dansmithc195project;
+package wgu.dansmithc195project.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
@@ -46,9 +45,9 @@ public class MainController implements Initializable {
 
     @FXML
     public void openLoginScreen(ActionEvent actionEvent) throws IOException {
-        System.out.println("login button clicked");
+//        System.out.println("login button clicked");
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("views/LoginScreen.fxml"));
+        loader.setLocation(getClass().getResource("/wgu/dansmithc195poject/views/LoginScreen.fxml"));
         stage = (Stage)((Button)actionEvent.getSource()).getScene().getWindow();
         scene = loader.load();
         stage.setScene(new Scene(scene));
