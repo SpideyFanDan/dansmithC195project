@@ -15,9 +15,9 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         System.out.println("System loaded");
         Parent root = FXMLLoader.load(getClass().getResource("wgu/dansmithc195project/views/MainScreen.fxml"));
-        Scene scene = new Scene(root);
+//        Scene scene = new Scene(root);
         stage.setTitle("C195 Project");
-        stage.setScene(scene);
+        stage.setScene(new Scene(root));
         stage.show();
     }
 

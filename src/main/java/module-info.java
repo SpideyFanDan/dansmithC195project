@@ -2,6 +2,7 @@ module wgu.dansmithc195project {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires mysql.connector.java;
 
 
     opens wgu.dansmithc195project to javafx.fxml;
