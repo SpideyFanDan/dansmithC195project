@@ -47,7 +47,7 @@ public class MainController implements Initializable {
     public void openLoginScreen(ActionEvent actionEvent) throws IOException {
 //        System.out.println("login button clicked");
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/wgu/dansmithc195poject/views/LoginScreen.fxml"));
+        loader.setLocation(getClass().getResource("/wgu/dansmithc195project/views/LoginScreen.fxml"));
         stage = (Stage)((Button)actionEvent.getSource()).getScene().getWindow();
         scene = loader.load();
         stage.setScene(new Scene(scene));

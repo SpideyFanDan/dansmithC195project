@@ -28,11 +28,11 @@ public abstract class JDBC {
         }
         catch(SQLException e) {
             //System.out.println("Error:" + e.getMessage());
-            e.printStackTrace();
+            e.printStackTrace(); //given in a CI webinar
         }
         catch (ClassNotFoundException e){
             //System.out.println(e.getMessage());
-            e.printStackTrace();
+            e.printStackTrace(); //given in a CI webinar
         }
         return connection;
     }
