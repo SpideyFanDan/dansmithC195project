@@ -10,7 +10,9 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.layout.HBox;
 
-/**This controller handles the login screen*/
+/** This controller handles the login screen allowing the user to access the program by entering a valid username
+ * and password
+ */
 public class LoginScreenController {
 
 

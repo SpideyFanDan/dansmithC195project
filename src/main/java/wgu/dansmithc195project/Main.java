@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 import wgu.dansmithc195project.utils.JDBC;
 import java.io.*;
 
-/**Main class that launches the application's main screen*/
+/**Main class*/
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
@@ -19,10 +19,14 @@ public class Main extends Application {
         stage.setScene(new Scene(root));
         stage.show();
     }
-
+/**
+ * This is the main method that launches the application's main screen and opens the db connection when the
+ * program is run, then closes the connection when the program is closed
+ * */
 /**@param args arguments for the command line*/
     public static void main(String[] args) {
         JDBC.openConnection();
         launch(args);
+        JDBC.closeConnection();
     }
 }

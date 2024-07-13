@@ -31,7 +31,7 @@ public class Country {
     }
 
     /**@param country the country name setter*/
-    public void setCountryName(String country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 }
