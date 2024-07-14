@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"wgu.dansmithc195project","l":"wgu.dansmithc195project"},{"m":"wgu.dansmithc195project","l":"wgu.dansmithc195project.controllers"},{"m":"wgu.dansmithc195project","l":"wgu.dansmithc195project.models"},{"m":"wgu.dansmithc195project","l":"wgu.dansmithc195project.utils"}];updateSearchResults();

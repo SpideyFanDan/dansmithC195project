@@ -36,4 +36,12 @@ public class User {
 
     /**@param password user password setter*/
     public void setPassword(String password) {this.password = password;}
+
+    /**This method returns the user ID & username as a string for the dropdown menus
+     * @return returns string as "userID - userName"
+     */
+    @Override
+    public String toString() {
+        return (userId + " - " + userName);
+    }
 }
