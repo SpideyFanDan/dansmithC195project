@@ -5,8 +5,10 @@ import wgu.dansmithc195project.models.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 
-/**This clas is connecting to the users database with SQL queries*/
+/**This class is connecting to the users database with SQL queries*/
 public class UserDAOImpl {
     /**This method gets all users from SQL database
      * @return usersList
@@ -32,12 +34,12 @@ public class UserDAOImpl {
     /**This method authenticates the user (checks that password is correct)
      * @return usersList
      * @param username
-     * @param inputPassword 
+     * @param inputPassword
      */
     public static ObservableList<User> authenticateUser(String username, String inputPassword){
-        ObservableList<User> usersList = FXCollections.observableArrayList();
+        ObservableList<User> userLogin = FXCollections.observableArrayList();
         try {
-            String sql = "Select * from users WHERE User_Name = ? AND Password = ?";
+            String sql = "Select * from users WHERE User_Name=? AND Password=?";
             PreparedStatement preparedStatement = JDBC.connection.prepareStatement(sql);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, inputPassword);
@@ -47,12 +49,18 @@ public class UserDAOImpl {
                 String userName = resultSet.getString("User_Name");
                 String password = resultSet.getString("Password");
                 User user = new User(userId, userName, password);
-                usersList.add(user);
+                userLogin.add(user);
             }
         }catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return usersList;
+        return userLogin;
     }
-
+    /**This method gets the Local date and time from the user's operating system
+     * @return localDateTime pulled from the user's operating system
+     */
+    public static LocalDateTime getLoginLocalDateTime(){
+        LocalDateTime localDateTime = LocalDateTime.now(ZoneId.systemDefault());
+        return localDateTime;
+    }
 }

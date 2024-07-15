@@ -12,7 +12,7 @@
    <rowConstraints>
       <RowConstraints />
    </rowConstraints>
-   <AnchorPane prefHeight="200.0" prefWidth="328.0">
+   <AnchorPane prefHeight="250.0" prefWidth="328.0">
       <Label alignment="CENTER" layoutX="79.0" layoutY="23.0" prefHeight="55.0" prefWidth="172.0" text="Global Consulting CRM" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="Calibri Bold" size="18.0" />
@@ -41,12 +41,12 @@
             </VBox.margin>
          </Label>
       </VBox>
-      <HBox alignment="CENTER" layoutX="5.0" layoutY="201.0" prefHeight="41.0" prefWidth="316.0" spacing="15.0">
+      <HBox alignment="CENTER_RIGHT" layoutX="5.0" layoutY="200.0" prefHeight="41.0" prefWidth="316.0" spacing="15.0">
          <opaqueInsets>
-            <Insets bottom="15.0" />
+            <Insets bottom="10.0" />
          </opaqueInsets>
-         <Button fx:id="loginButton" mnemonicParsing="false" onAction="#clickLoginButton" prefHeight="30.0" prefWidth="70.0" text="Login" />
-         <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Cancel" />
+         <Button fx:id="loginButton" mnemonicParsing="false" onAction="#clickLoginButton" prefHeight="25.0" prefWidth="90.0" text="Login" />
+         <Button fx:id="resetButton" mnemonicParsing="false" onAction="#clickResetButton" prefHeight="25.0" prefWidth="90.0" text="Reset" />
       </HBox>
       <HBox alignment="CENTER" layoutX="2.0" layoutY="65.0" prefHeight="27.0" prefWidth="326.0">
          <Label fx:id="locationLoginLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="316.0" text="Location" textAlignment="CENTER" />
