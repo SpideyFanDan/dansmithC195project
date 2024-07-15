@@ -35,7 +35,7 @@
             </Label>
             <TextField fx:id="passwordTextBox" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="200.0" />
          </HBox>
-         <Label fx:id="loginErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="285.0" text="Incorrect username or password" textAlignment="CENTER" textFill="RED">
+         <Label fx:id="loginErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="285.0" text=" " textAlignment="CENTER" textFill="RED">
             <VBox.margin>
                <Insets />
             </VBox.margin>

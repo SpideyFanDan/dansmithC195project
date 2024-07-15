@@ -53,7 +53,9 @@ public class LoginScreenController {
         String username = userTextBox.getText();
         String password = passwordTextBox.getText();
         if(UserDAOImpl.authenticateUser(username, password).size() == 0){
-            System.out.println("username or password incorrect");
+            loginErrorLabel.setText("username or password incorrect");
+        }else {
+
         }
 
     }
