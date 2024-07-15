@@ -2,7 +2,6 @@ package wgu.dansmithc195project.DOA;
 
 import wgu.dansmithc195project.utils.JDBC;
 import wgu.dansmithc195project.models.User;
-import wgu.dansmithc195project.models.Contact;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import java.sql.*;
@@ -30,7 +29,11 @@ public class UserDAOImpl {
         }
         return usersList;
     }
-    /***/
+    /**This method authenticates the user (checks that password is correct)
+     * @return usersList
+     * @param username
+     * @param inputPassword 
+     */
     public static ObservableList<User> authenticateUser(String username, String inputPassword){
         ObservableList<User> usersList = FXCollections.observableArrayList();
         try {

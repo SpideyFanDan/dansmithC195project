@@ -51,36 +51,4 @@ public abstract class JDBC {
         }
         return connection;
     }
-
-//    public static Connection openConnection() {
-//        try {
-//            Class.forName(driver); // Locate Driver
-//            connection = DriverManager.getConnection(jdbcUrl, userName, password); // Reference Connection object
-//            System.out.println("Connection successful!");
-//        }
-//        catch(SQLException e) {
-//            //System.out.println("Error:" + e.getMessage());
-//            e.printStackTrace();
-//        }
-//        catch (ClassNotFoundException e){
-//            //System.out.println(e.getMessage());
-//            e.printStackTrace();
-//        }
-//        return connection;
-//    }
-//
-//    public static Connection getConnection(){
-//        return connection;
-//    }
-//    public static Connection closeConnection() {
-//        try {
-//            connection.close();
-//        }
-//        catch(Exception e)
-//        {
-//            //do nothing
-//        }
-//        return connection;
-//    }
-
 }
