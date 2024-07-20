@@ -36,12 +36,12 @@ public class UserDAOImpl {
      * @param username
      * @param inputPassword
      */
-    public static ObservableList<User> authenticateUser(String username, String inputPassword){
+    public static ObservableList<User> authenticateUser(String inputUsername, String inputPassword){
         ObservableList<User> userLogin = FXCollections.observableArrayList();
         try {
             String sql = "Select * from users WHERE User_Name=? AND Password=?";
             PreparedStatement preparedStatement = JDBC.connection.prepareStatement(sql);
-            preparedStatement.setString(1, username);
+            preparedStatement.setString(1, inputUsername);
             preparedStatement.setString(2, inputPassword);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()){
@@ -55,12 +55,5 @@ public class UserDAOImpl {
             throw new RuntimeException(e);
         }
         return userLogin;
-    }
-    /**This method gets the Local date and time from the user's operating system
-     * @return localDateTime pulled from the user's operating system
-     */
-    public static LocalDateTime getLoginLocalDateTime(){
-        LocalDateTime localDateTime = LocalDateTime.now(ZoneId.systemDefault());
-        return localDateTime;
     }
 }
