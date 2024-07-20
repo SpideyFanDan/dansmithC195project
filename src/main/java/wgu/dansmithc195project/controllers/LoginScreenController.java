@@ -2,14 +2,18 @@ package wgu.dansmithc195project.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.layout.HBox;
 import wgu.dansmithc195project.DOA.UserDAOImpl;
+import wgu.dansmithc195project.models.User;
+import wgu.dansmithc195project.models.Appointment;
+import wgu.dansmithc195project.utils.JDBC;
+
+import java.sql.*;
+
 
 /** This controller handles the login screen allowing the user to access the program by entering a valid username
  * and password
