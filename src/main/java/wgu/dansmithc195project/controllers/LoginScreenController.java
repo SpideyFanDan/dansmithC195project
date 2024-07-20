@@ -55,13 +55,19 @@ public class LoginScreenController {
         if(UserDAOImpl.authenticateUser(username, password).size() == 0){
             loginErrorLabel.setText("username or password incorrect");
         }else {
-
+            loginErrorLabel.setText(" ");
         }
 
     }
 
+    /**This method is to reset the text fields for the username and password on the login screen
+     * @param actionEvent
+     */
     public void clickResetButton(ActionEvent actionEvent) {
         System.out.println("Reset button clicked");
+        userTextBox.clear();
+        passwordTextBox.clear();
+        loginErrorLabel.setText(" ");
     }
 
 }
