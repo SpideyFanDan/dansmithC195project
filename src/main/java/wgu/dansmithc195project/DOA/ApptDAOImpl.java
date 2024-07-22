@@ -108,4 +108,14 @@ public class ApptDAOImpl {
         int rowsAffected = preparedStatement.executeUpdate();
         return rowsAffected;
     }
+
+    /**This method gets all appointments by month*/
+
+    /**This method gets all appointments by week*/
+
+    /**This method gets all customers by month and type*/
+
+    /**This method gets all customers by division and country*/
+
+    /**This method determines whether any appointments overlap and deliver error alerts based on how they overlap*/
 }

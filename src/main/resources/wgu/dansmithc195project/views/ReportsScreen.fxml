@@ -74,7 +74,7 @@
          </columns>
       </TableView>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="242.0" style="-fx-font-weight: bold;" text="Total Appointments by Month &amp; Type" textAlignment="CENTER" GridPane.columnIndex="1" />
-      <TableView fx:id="tableLoginAttemptsReport" focusTraversable="false" prefHeight="199.0" prefWidth="256.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <TableView fx:id="tableNumCustReport" focusTraversable="false" prefHeight="199.0" prefWidth="256.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <columns>
             <TableColumn fx:id="numCustomersCol" prefWidth="34.0" text="#" />
             <TableColumn fx:id="numCustDivisionCol" minWidth="5.0" prefWidth="133.0" style="-fx-alignment: CENTER;" text="Division" />
