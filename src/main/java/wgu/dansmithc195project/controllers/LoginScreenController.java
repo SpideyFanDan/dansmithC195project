@@ -11,6 +11,7 @@ import wgu.dansmithc195project.DOA.UserDAOImpl;
 import wgu.dansmithc195project.models.User;
 import wgu.dansmithc195project.models.Appointment;
 import wgu.dansmithc195project.utils.JDBC;
+import wgu.dansmithc195project.utils.Locale;
 
 import java.sql.*;
 

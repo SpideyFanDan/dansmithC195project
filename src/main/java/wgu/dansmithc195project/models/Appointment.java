@@ -1,10 +1,7 @@
 package wgu.dansmithc195project.models;
 
-import java.sql.Timestamp;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZonedDateTime;
+import java.time.*;
+
 /**This class handles customer appointments, I left out the create and update attributes because they are not
  * part of the requirements*/
 public class Appointment {
@@ -14,12 +11,8 @@ public class Appointment {
     private String description;
     private String location;
     private String type;
-    private LocalDateTime startDateTime;
-    private LocalDateTime endDateTime;
-    private LocalDate startDate;
-    private LocalDate endDate;
-    private LocalTime startTime;
-    private LocalTime endTime;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
     private int customerId;
     private int userId;
     private int contactId;
@@ -30,10 +23,6 @@ public class Appointment {
      * @param description appointment description
      * @param location appointment location
      * @param type appointment type
-     * @param startDateTime appointment start date & time
-     * @param endDateTime appointment end date & time
-     * @param startDate appointment start date
-     * @param endDate appointment end date
      * @param startTime appointment start time
      * @param endTime appointment end time
      * @param customerId customer ID
@@ -41,17 +30,12 @@ public class Appointment {
      * @param contactId customer contact ID
      */
     public Appointment(int appointmentId, String title, String description, String location, String type,
-                       LocalDateTime startDateTime, LocalDateTime endDateTime, LocalDate startDate, LocalDate endDate,
-                       LocalTime startTime, LocalTime endTime, int customerId, int userId, int contactId){
+                       LocalDateTime startTime, LocalDateTime endTime, int customerId, int userId, int contactId){
         this.appointmentId = appointmentId;
         this.title = title;
         this.description = description;
         this.location = location;
         this.type = type;
-        this.startDateTime = startDateTime;
-        this.endDateTime = endDateTime;
-        this.startDate = startDate;
-        this.endDate = endDate;
         this.startTime = startTime;
         this.endTime = endTime;
         this.customerId = customerId;
@@ -109,63 +93,23 @@ public class Appointment {
         this.type = type;
     }
 
-    /**@return the startDateTime*/
-    public LocalDateTime getStartDateTime() {
-        return startDateTime;
-    }
-
-    /**@param startDateTime the appointment start date and time setter*/
-    public void setStartDateTime(LocalDateTime startDateTime) {
-        this.startDateTime = startDateTime;
-    }
-
-    /**@return the endDateTime*/
-    public LocalDateTime getEndDateTime() {
-        return endDateTime;
-    }
-
-    /**@param endDateTime the appointment end date and time setter*/
-    public void setEndDateTime(LocalDateTime endDateTime) {
-        this.endDateTime = endDateTime;
-    }
-
-    /**@return the startDate*/
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    /**@param startDate the appointment start date setter*/
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
-
-    /**@return the endDate*/
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    /**@param endDate the appointment end date setter*/
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
-    }
-
     /**@return the startTime*/
-    public LocalTime getStartTime() {
+    public LocalDateTime getStartTime() {
         return startTime;
     }
 
     /**@param startTime the appointment (local) start time setter*/
-    public void setStartTime(LocalTime startTime) {
+    public void setStartTime(LocalDateTime startTime) {
         this.startTime = startTime;
     }
 
     /**@return the endTime*/
-    public LocalTime getEndTime() {
+    public LocalDateTime getEndTime() {
         return endTime;
     }
 
     /**@param endTime the appointment (local) end time setter*/
-    public void setEndTime(LocalTime endTime) {
+    public void setEndTime(LocalDateTime endTime) {
         this.endTime = endTime;
     }
 
