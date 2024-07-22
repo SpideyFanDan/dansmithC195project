@@ -5,99 +5,86 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0"
-          prefWidth="657.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1"
-          fx:controller="wgu.dansmithc195project.controllers.ReportsController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.dansmithc195project.controllers.ReportsController">
    <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="15.0"/>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="642.0" minWidth="10.0" prefWidth="627.0"/>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="-Infinity" prefWidth="15.0"/>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="15.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="726.0" minWidth="10.0" prefWidth="720.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="-Infinity" prefWidth="16.0" />
    </columnConstraints>
    <rowConstraints>
-      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES"/>
-      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="335.0" vgrow="SOMETIMES"/>
-      <RowConstraints maxHeight="268.0" minHeight="-Infinity" prefHeight="259.0" vgrow="SOMETIMES"/>
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="335.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="268.0" minHeight="-Infinity" prefHeight="259.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <GridPane layoutX="25.0" layoutY="25.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
       <columnConstraints>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0"/>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" prefWidth="567.0"/>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0"/>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" prefWidth="567.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0" />
       </columnConstraints>
       <rowConstraints>
-         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES"/>
-         <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="284.0" vgrow="SOMETIMES"/>
-         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="284.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
       </rowConstraints>
-      <TableView fx:id="tableScheduleReport" focusTraversable="false" prefHeight="275.0" prefWidth="297.0"
-                 GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+      <TableView fx:id="tableScheduleReport" focusTraversable="false" prefHeight="275.0" prefWidth="297.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
          <columns>
-            <TableColumn fx:id="idCol" prefWidth="36.0" style="-fx-alignment: CENTER;" text="ID"/>
-            <TableColumn fx:id="titleCol" prefWidth="93.0" style="-fx-alignment: CENTER;" text="Title"/>
-            <TableColumn fx:id="descriptionCol" prefWidth="122.0" style="-fx-alignment: CENTER;" text="Description"/>
-            <TableColumn fx:id="typeCol" minWidth="7.0" prefWidth="88.0" style="-fx-alignment: CENTER;" text="Type"/>
-            <TableColumn fx:id="startCol" prefWidth="100.0" style="-fx-alignment: CENTER;" text="Start"/>
-            <TableColumn fx:id="endCol" prefWidth="101.0" style="-fx-alignment: CENTER;" text="End"/>
-            <TableColumn fx:id="customerIdCol" prefWidth="76.0" style="-fx-alignment: CENTER;" text="Customer ID"/>
+            <TableColumn fx:id="idCol" prefWidth="59.0" style="-fx-alignment: CENTER;" text="ID" />
+            <TableColumn fx:id="titleCol" prefWidth="151.0" style="-fx-alignment: CENTER;" text="Title" />
+            <TableColumn fx:id="descriptionCol" prefWidth="184.0" style="-fx-alignment: CENTER;" text="Description" />
+            <TableColumn fx:id="typeCol" minWidth="7.0" prefWidth="83.0" style="-fx-alignment: CENTER;" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="76.0" style="-fx-alignment: CENTER;" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="78.0" style="-fx-alignment: CENTER;" text="End" />
+            <TableColumn fx:id="customerIdCol" prefWidth="78.0" style="-fx-alignment: CENTER;" text="Customer ID" />
          </columns>
       </TableView>
       <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="100" GridPane.columnIndex="1">
          <Label style="-fx-font-weight: bold;" text="Schedule for Contacts">
             <font>
-               <Font size="14.0"/>
+               <Font size="14.0" />
             </font>
          </Label>
          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
             <Label prefHeight="20.0" prefWidth="64.0" text="Contact: ">
                <font>
-                  <Font size="14.0"/>
+                  <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox fx:id="contactDropdown" focusTraversable="false" onAction="#onSelectContact"
-                      prefWidth="150.0"/>
+            <ComboBox fx:id="contactDropdown" focusTraversable="false" onAction="#onSelectContact" prefWidth="150.0" />
          </HBox>
       </HBox>
    </GridPane>
    <GridPane prefHeight="259.0" prefWidth="296.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
       <columnConstraints>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0"/>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="408.0" minWidth="204.0" prefWidth="239.0"/>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="0.0" prefWidth="71.0"/>
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="204.0" prefWidth="306.0"/>
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="10.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="408.0" minWidth="204.0" prefWidth="239.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="0.0" prefWidth="71.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="204.0" prefWidth="306.0" />
       </columnConstraints>
       <rowConstraints>
-         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES"/>
-         <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="284.0" vgrow="SOMETIMES"/>
-         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES"/>
+         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="284.0" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
       </rowConstraints>
-      <TableView fx:id="tableNumApptsReport" focusTraversable="false" prefHeight="199.0" prefWidth="237.0"
-                 GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <TableView fx:id="tableNumApptsReport" focusTraversable="false" prefHeight="199.0" prefWidth="237.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
          <columns>
-            <TableColumn fx:id="numApptsCol" prefWidth="35.0" style="-fx-alignment: CENTER;" text="#"/>
-            <TableColumn fx:id="numApptsMonthCol" prefWidth="95.0" style="-fx-alignment: CENTER;" text="Month"/>
-            <TableColumn fx:id="numApptsTypeCol" prefWidth="111.0" style="-fx-alignment: CENTER;" text="Type"/>
+            <TableColumn fx:id="numApptsCol" prefWidth="35.0" style="-fx-alignment: CENTER;" text="#" />
+            <TableColumn fx:id="numApptsMonthCol" prefWidth="95.0" style="-fx-alignment: CENTER;" text="Month" />
+            <TableColumn fx:id="numApptsTypeCol" prefWidth="111.0" style="-fx-alignment: CENTER;" text="Type" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="242.0"
-             style="-fx-font-weight: bold;" text="Total Appointments by Month &amp; Type" textAlignment="CENTER"
-             GridPane.columnIndex="1"/>
-      <TableView fx:id="tableLoginAttemptsReport" focusTraversable="false" prefHeight="199.0" prefWidth="256.0"
-                 GridPane.columnIndex="3" GridPane.rowIndex="1">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="242.0" style="-fx-font-weight: bold;" text="Total Appointments by Month &amp; Type" textAlignment="CENTER" GridPane.columnIndex="1" />
+      <TableView fx:id="tableLoginAttemptsReport" focusTraversable="false" prefHeight="199.0" prefWidth="256.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
          <columns>
-            <TableColumn fx:id="numLoginAttemptsCol" prefWidth="34.0" text="#"/>
-            <TableColumn fx:id="numLoginAttemptsUserCol" minWidth="5.0" prefWidth="170.0"
-                         style="-fx-alignment: CENTER;" text="User"/>
-            <TableColumn fx:id="numLoginAttemptsDateCol" minWidth="5.0" prefWidth="101.0"
-                         style="-fx-alignment: CENTER;" text="Date"/>
+            <TableColumn fx:id="numCustomersCol" prefWidth="34.0" text="#" />
+            <TableColumn fx:id="numCustDivisionCol" minWidth="5.0" prefWidth="133.0" style="-fx-alignment: CENTER;" text="Division" />
+            <TableColumn fx:id="numCustCountryCol" minWidth="5.0" prefWidth="138.0" style="-fx-alignment: CENTER;" text="Country" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="232.0"
-             style="-fx-font-weight: bold;" text="Total User Login Attempts by Date" textAlignment="CENTER"
-             GridPane.columnIndex="3"/>
-      <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0"
-              prefWidth="76.0" text="Back" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="232.0" style="-fx-font-weight: bold;" text="Total Customers by Country &amp; Division" textAlignment="CENTER" GridPane.columnIndex="3" />
+      <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Back" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
          <GridPane.margin>
-            <Insets top="100.0"/>
+            <Insets top="100.0" />
          </GridPane.margin>
       </Button>
    </GridPane>

@@ -21,17 +21,17 @@ public class CustomersTableController {
     @FXML private TableColumn<?, ?> phoneNumberColumn;
     @FXML private TableColumn<?, ?> postalCodeColumn;
 
-    @FXML void clickAddButton(ActionEvent event) {
 
-    }
     @FXML void clickBackButton(ActionEvent event) {
 
     }
-    @FXML void clickDeleteButton(ActionEvent event) {
 
-    }
-    @FXML void clickEditButton(ActionEvent event) {
-
+    public void addCustomer(ActionEvent event) {
     }
 
+    public void editCustomer(ActionEvent event) {
+    }
+
+    public void deleteCustomer(ActionEvent event) {
+    }
 }
