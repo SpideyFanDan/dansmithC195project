@@ -16,7 +16,7 @@ public class UserDAOImpl {
     public static ObservableList<User> getAllUsers(){
         ObservableList<User> usersList = FXCollections.observableArrayList();
         try {
-            String sql = "Select * from users";
+            String sql = "SELECT * FROM users";
             PreparedStatement preparedStatement = JDBC.connection.prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()){
@@ -33,13 +33,13 @@ public class UserDAOImpl {
     }
     /**This method authenticates the user (checks that password is correct)
      * @return usersList
-     * @param username
+     * @param inputUsername
      * @param inputPassword
      */
     public static ObservableList<User> authenticateUser(String inputUsername, String inputPassword){
         ObservableList<User> userLogin = FXCollections.observableArrayList();
         try {
-            String sql = "Select * from users WHERE User_Name=? AND Password=?";
+            String sql = "SELECT * FROM users WHERE User_Name=? AND Password=?";
             PreparedStatement preparedStatement = JDBC.connection.prepareStatement(sql);
             preparedStatement.setString(1, inputUsername);
             preparedStatement.setString(2, inputPassword);

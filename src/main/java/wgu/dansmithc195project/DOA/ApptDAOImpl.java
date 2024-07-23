@@ -109,9 +109,15 @@ public class ApptDAOImpl {
         return rowsAffected;
     }
 
-    /**This method gets all appointments by month*/
-
     /**This method gets all appointments by week*/
+    public static ObservableList<Appointment> getApptsByWeek(String week, String year){
+        ObservableList<Appointment> apptsList = FXCollections.observableArrayList();
+        try{
+            String sql = "SELECT * from appointments WHERE start = ?";
+        }
+    }
+
+    /**This method gets all appointments by month*/
 
     /**This method gets all customers by month and type*/
 
