@@ -19,10 +19,9 @@ public class Main extends Application {
         stage.setScene(new Scene(root));
         stage.show();
     }
-/**
- * This is the main method that launches the application's main screen and opens the db connection when the
- * program is run, then closes the connection when the program is closed
- * */
+/**This is the main method that launches the application's main screen and opens the db connection when the program
+ * is run, then closes the connection when the program is closed*/
+
 /**@param args arguments for the command line*/
     public static void main(String[] args) {
         JDBC.openConnection();
